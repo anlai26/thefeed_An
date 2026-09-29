@@ -1,0 +1,66 @@
+
+.words{
+    margin-left: 370px;
+    margin-top: 55px;
+    position: relative;
+    z-index: 0;
+}
+
+.gif {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin-left: 370px;
+    position: relative;
+    z-index: 1;
+}
+
+body{
+    background-color: rgb(255, 206, 214);
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100vh;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+    box-shadow: inset 0 0 0 5px #fff4e6;
+    background:
+        radial-gradient(ellipse 18px 10px at 9px 10px, rgba(241, 27, 105, 0.68) 96%, transparent 100%) repeat-x top left / 18px 20px,
+        radial-gradient(ellipse 18px 10px at 9px 10px, rgba(241, 27, 105, 0.68) 96%, transparent 100%) repeat-x bottom left / 18px 20px,
+        radial-gradient(ellipse 10px 18px at 10px 9px, rgba(241, 27, 105, 0.68) 96%, transparent 100%) repeat-y top left / 20px 18px,
+        radial-gradient(ellipse 10px 18px at 10px 9px, rgba(241, 27, 105, 0.68) 96%, transparent 100%) repeat-y top right / 20px 18px;
+}
+
+.arrow2{
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    width: 100px;
+    height: auto;
+    margin: 0px;
+    z-index: 2;
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.flower{
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+    pointer-events: none;
+    z-index: 1;
+}
